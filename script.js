@@ -14,19 +14,19 @@ snake[0] = {
 };
 
 function createBG() {
-  context.fillStyle = 'lightgreen';
+  context.fillStyle = '#6D8EA0';
   context.fillRect(0, 0, 16 * box, 16 * box);
 }
 
 function createSnake() {
   for (i = 0; i < snake.length; i++) {
-    context.fillStyle = 'green';
+    context.fillStyle = '#22AED1';
     context.fillRect(snake[i].x, snake[i].y, box, box);
   }
 }
 
 function drawFood() {
-  context.fillStyle = 'red';
+  context.fillStyle = '#182825';
   context.fillRect(food.x, food.y, box, box);
 }
 
@@ -44,6 +44,7 @@ function startGame() {
     if (snake[0].x == snake[i].x && snake[0].y == snake[i].y) {
       clearInterval(game);
       alert('Game Over!');
+      window.window.location.reload();
     }
   }
 

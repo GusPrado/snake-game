@@ -1,0 +1,18 @@
+body {
+  height: 95vh;
+  width: 95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #016fb9;
+  font-family: 'Mochiy Pop One', sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+#snake {
+  box-shadow: 10px 10px 8px #888888;
+}
